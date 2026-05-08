@@ -58,27 +58,27 @@ class NoteForm extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-  <div class="note-form-container">
-    <h2>Add New Note</h2>
-    <form id="noteForm">
-      <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" id="title" name="title" placeholder="Note title" required maxlength="100">
-        <div class="error-message" id="title-error">Title is required</div>
-        <div class="char-counter"><span id="title-counter">0</span>/100</div>
-      </div>
+    <div class="note-form-container">
+      <h2>Add New Note</h2>
+      <form id="noteForm">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="Note title" required maxlength="100">
+          <div class="error-message" id="title-error">Title is required</div>
+          <div class="char-counter"><span id="title-counter">0</span>/100</div>
+        </div>
 
-      <div class="form-group">
-        <label for="body">Content</label>
-        <textarea id="body" name="body" placeholder="Note content" required maxlength="1000"></textarea>
-        <div class="error-message" id="body-error">Content is required</div>
-        <div class="char-counter"><span id="body-counter">0</span>/1000</div>
-      </div>
+        <div class="form-group">
+          <label for="body">Content</label>
+          <textarea id="body" name="body" placeholder="Note content" required maxlength="1000"></textarea>
+          <div class="error-message" id="body-error">Content is required</div>
+          <div class="char-counter"><span id="body-counter">0</span>/1000</div>
+        </div>
 
-      <button type="submit" id="submitBtn" disabled>Add Note</button>
-    </form>
-  </div>
-`;
+        <button type="submit" id="submitBtn" disabled>Add Note</button>
+      </form>
+    </div>
+  `;
   }
 
   connectedCallback() {

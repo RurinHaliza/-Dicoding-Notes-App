@@ -1,18 +1,21 @@
 {
   "name": "project-awal",
+  "homepage": "https://rurinhaliza.github.io/-Dicoding-Notes-App/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.6",
@@ -23,4 +26,5 @@
     "animejs": "^3.2.2",
     "sweetalert2": "^11.26.24"
   }
+  
 }
