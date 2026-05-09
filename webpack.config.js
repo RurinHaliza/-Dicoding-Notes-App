@@ -7,7 +7,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true, // hapus file lama saat build
-    publicPath: '/-Dicoding-Notes-App/'
+    publicPath: '/Dicoding-Notes-App/'
   },
   mode: 'development',
   devServer: {
